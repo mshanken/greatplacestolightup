@@ -1,14 +1,95 @@
-<div class="row">
-	<div class="col-sm-12 jumbotron">
-		<h1 class="display-3">Hello, world!</h1>
-		<p class="lead">This is HTML5 Boilerplate to use along with harp-boilerplate</p>
-		<a href="/" class="btn btn-primary btn-lg" role="button" aria-pressed="true">Learn more</a>
+<div class="row white-bg vertical-divider">
+	<div class="col-lg-6">
+		<%- partial("_themes/default/content-handler",
+			{
+				image_src: "ShellysBackroom.jpg",
+				image_alt: "Shelly's Back room | Washington, D.C.",
+				image_url: "http://www.shellysbackroom.com/",
+				link_title: "Shelly's Back room | Washington, D.C.",
+				yield: partial("_homepage/01")
+			})
+		%>
+	</div>
+	<div class="col-lg-6">
+		<%- partial("_themes/default/content-handler",
+			{
+				image_src: "AshtonCigar.jpg",
+				image_alt: "Ashton Cigar Bar | Philadelphia, PA",
+				image_url: "http://www.ashtoncigarbar.com/",
+				link_title: "Ashton Cigar Bar | Philadelphia, PA",
+				yield: partial("_homepage/02")
+			})
+		%>
+	</div>
+	<div class="col-lg-6">
+		<%- partial("_themes/default/content-handler",
+			{
+				image_src: "Davidoff.jpg",
+				image_alt: "Davidoff of Geneva | multiple locations",
+				image_url: "http://www.davidoffgeneva.com/",
+				link_title: "Davidoff of Geneva | multiple locations",
+				yield: partial("_homepage/03")
+			})
+		%>
+	</div>
+	<div class="col-lg-6">
+		<%- partial("_themes/default/content-handler",
+			{
+				image_src: "BurnbyRP.jpg",
+				image_alt: "Burn by Rocky Patel | multiple locations",
+				image_url: "http://www.burnbyrockypatel.com/",
+				link_title: "Burn by Rocky Patel | multiple locations",
+				yield: partial("_homepage/04")
+			})
+		%>
+	</div>
+	<div class="col-lg-6">
+		<%- partial("_themes/default/content-handler",
+			{
+				image_src: "BlendCigarBar.jpg",
+				image_alt: "Blend Bar | multiple locations",
+				image_url: "http://www.blendbarcigar.com/",
+				link_title: "Blend Bar | multiple locations",
+				yield: partial("_homepage/05")
+			})
+		%>
+	</div>
+	<div class="col-lg-6">
+		<%- partial("_themes/default/content-handler",
+			{
+				image_src: "Corona.jpg",
+				image_alt: "Corona Cigar | Orlando, FL",
+				image_url: "http://www.coronacigar.com/",
+				link_title: "Corona Cigar | Orlando, FL",
+				yield: partial("_homepage/06")
+			})
+		%>
+	</div>
+	<div class="col-lg-6">
+		<%- partial("_themes/default/content-handler",
+			{
+				image_src: "CasadeMontecristo.jpg",
+				image_alt: "Casa de Montecristo by JR Cigar | Paramus, NJ",
+				image_url: "http://www.casademontecristo.com/",
+				link_title: "Casa de Montecristo by JR Cigar | Paramus, NJ",
+				yield: partial("_homepage/07")
+			})
+		%>
+	</div>
+	<div class="col-lg-6">
+		<%- partial("_themes/default/content-handler",
+			{
+				image_src: "SohoCigarBar.jpg",
+				image_alt: "Soho Cigar Bar | Manhattan, NY",
+				image_url: "http://www.sohocigarbar.com/",
+				link_title: "Soho Cigar Bar | Manhattan, NY",
+				yield: partial("_homepage/08")
+			})
+		%>
 	</div>
 </div>
-<div class="row">
-	<div class="col-sm-4 offset-sm-2"><%- partial("_homepage/html5bp") %></div>
-	<div class="col-sm-4"><%- partial("_homepage/bootstrap") %></div>
-</div>
-<div class="row">
-	<div class="col-sm-8 offset-sm-2"><%- partial("_homepage/harpjs") %></div>
-</div>
+
+
+		
+		<pre><%# - JSON.stringify(public, null, '\t') %></pre>
+		<pre><%# - JSON.stringify(current, null, '\t') %></pre>
