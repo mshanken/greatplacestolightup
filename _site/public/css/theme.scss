@@ -15,19 +15,24 @@
 //
 // Custom style starts here
 // --------------------------------------------------
-body, .jumbotron {
-	background-color: #5a93b3;
+body{
+	font-family: Roboto;
+}
+.header{
+	background-color: #e9ecef;
+}
+.footer{
+	background-color: #333;
+}
+h1{
+	font-weight: 900;
 }
 .row a{
 	color: #333;
 }
 .jumbotron, .footer p{
-	color: #fff;
-	text-shadow: 1px 2px 3px #666;
+	text-shadow: 1px 1px 3px #333;
 	margin-bottom: 0;
-}
-.white-bg{
-	background-color: $white;
 }
 .card{
 	padding-top: 15px;
