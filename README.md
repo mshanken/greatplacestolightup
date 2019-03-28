@@ -2,6 +2,17 @@
 
 A new promotional site.
 
+## Deploying the gh-pages branch
+```
+sudo npm install -g bower harp
+bower install
+harp compile _site www
+cp -R ./www/* ./
+git add .
+git commit -am "Update site"
+git push origin gh-pages
+```
+
 ## How it works
 
 All you need to run this project is docker.
