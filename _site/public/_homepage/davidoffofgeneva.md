@@ -6,4 +6,4 @@ Atlanta • Houston • New York • Las Vegas • Tampa
 
 &nbsp;
 
-[**us.davidoffgeneva.com**](https://us.davidoffgeneva.com/)
+[**davidoffgeneva.com**](https://us.davidoffgeneva.com/)
