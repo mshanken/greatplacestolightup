@@ -14543,7 +14543,7 @@ return jQuery;
 //# sourceMappingURL=bootstrap.js.map
 
 /*!
- * Font Awesome Free 5.10.2 by @fontawesome - https://fontawesome.com
+ * Font Awesome Free 5.11.2 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
 (function () {
@@ -15640,7 +15640,7 @@ return jQuery;
     mark: noop$1,
     measure: noop$1
   };
-  var preamble = "FA \"5.10.2\"";
+  var preamble = "FA \"5.11.2\"";
 
   var begin = function begin(name) {
     p.mark("".concat(preamble, " ").concat(name, " begins"));
@@ -15906,6 +15906,7 @@ return jQuery;
 
       var forSvg = new RegExp("".concat(config.familyPrefix, "-.*"));
       delete abstract[0].attributes.style;
+      delete abstract[0].attributes.id;
       var splitClasses = abstract[0].attributes.class.split(' ').reduce(function (acc, cls) {
         if (cls === config.replacementClass || cls.match(forSvg)) {
           acc.toSvg.push(cls);
@@ -16350,6 +16351,12 @@ return jQuery;
       if (iconName && prefix && styles$2[prefix] && styles$2[prefix][iconName]) {
         var icon = styles$2[prefix][iconName];
         return resolve(asFoundIcon(icon));
+      }
+
+      var headers = {};
+
+      if (_typeof(WINDOW.FontAwesomeKitConfig) === 'object' && typeof window.FontAwesomeKitConfig.token === 'string') {
+        headers['fa-kit-token'] = WINDOW.FontAwesomeKitConfig.token;
       }
 
       if (iconName && prefix && !config.showMissingIcons) {
